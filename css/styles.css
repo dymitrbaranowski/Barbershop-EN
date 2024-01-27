@@ -1,0 +1,35 @@
+body {
+  font-family: open sans, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+.header {
+  background-color: grey;
+}
+
+.header-link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-tel {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.header-btn {
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
