@@ -41,6 +41,19 @@ body {
   text-transform: uppercase;
 }
 
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
 /* --------Header ---------*/
 
 .header {
@@ -107,11 +120,6 @@ body {
 }
 .hero-bottom-text {
   color: #9da4bd;
-
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.67; /* 166.667% */
-  letter-spacing: 0.02em;
 }
 
 /**-----------About---------- */
@@ -130,17 +138,9 @@ body {
 
 .about-title {
   color: var(--second-title-color);
-  font-family: Raleway, sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
 }
 .about-bottom-text {
   color: #555555;
-
-  font-size: 18px;
-  line-height: 1.67; /* 166.667% */
-  letter-spacing: 0.02em;
 }
 .about-text {
   color: #555;
@@ -164,10 +164,6 @@ body {
 
 .prices-title {
   color: #fff;
-  font-family: Raleway, sans-serif;
-  font-size: 42px;
-  line-height: 1/17;
-  letter-spacing: 0/05em;
 }
 .prices-list {
 }
@@ -214,15 +210,58 @@ body {
 
 .benefits-title {
   color: var(--second-title-color);
-  font-family: Raleway, sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
 }
 .benefits-bottom-text {
   color: #555;
+}
 
+/**-----------Barbers---------- */
+
+.barabers {
+}
+.barbers-top-text {
+  color: #303030;
+}
+
+.barbers-title {
+  color: var(--second-btn-color);
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+.barbers-item-title {
+  color: #303030;
+  text-align: center;
   font-size: 18px;
-  line-height: 1.67; /* 166.667% */
+  font-weight: 400;
+  line-height: 1.39;
   letter-spacing: 0.02em;
+}
+.barbers-item-text {
+  color: #ff6c00;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+}
+
+/**-----------Galery---------- */
+
+.gallery-top-text {
+  color: #303030;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+  /* column-gap: 30px;
+  row-gap: calc(var(--gap) * 2); */
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
 }
