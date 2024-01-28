@@ -6,8 +6,35 @@
   --accent-color: #ff6c00;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 body {
   font-family: open sans, sans-serif;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -17,6 +44,15 @@ body {
 
 .list {
   list-style: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline-color: red;
+  outline-width: 2px;
+  outline-style: groove;
 }
 
 .btn {
@@ -58,6 +94,8 @@ body {
 
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link {

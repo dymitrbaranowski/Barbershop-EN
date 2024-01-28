@@ -10,42 +10,53 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <a class="header-logo" href="./index.html">
-          <img
-            class="header-logo-img"
-            src="./images/Logo.svg.svg"
-            alt="logotype"
-            width="69"
-            height="55"
-          />
-        </a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link" href="">About</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Services and prices</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#barbers">Barbers</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html">
+            <img
+              class="header-logo-img"
+              src="./images/Logo.svg.svg"
+              alt="logotype"
+              width="69"
+              height="55"
+            />
+          </a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Services and prices</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="header-btn btn" type="button">Online-booking</button>
+        <a class="header-tel link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="header-btn btn" type="button">Online-booking</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div>
+        <div class="container hero-container">
           <ul class="hero-list list">
             <li class="hero-item">
               <a
@@ -62,8 +73,7 @@
               >
             </li>
           </ul>
-        </div>
-        <div>
+
           <p class="hero-top-text top-text">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
           <p class="hero-bottom-text bottom-text">
@@ -73,7 +83,7 @@
         </div>
       </section>
       <section class="about">
-        <div>
+        <div class="container">
           <ul class="about-list list">
             <li class="about-item">
               <img
@@ -92,8 +102,7 @@
               />
             </li>
           </ul>
-        </div>
-        <div>
+
           <p class="about-top-text top-text">About</p>
           <h2 class="about-title">Best Barbershop in your city</h2>
           <p class="about-bottom-text bottom-text">
