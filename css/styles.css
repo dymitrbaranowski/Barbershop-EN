@@ -162,6 +162,28 @@ img {
 
 /**-----------About---------- */
 
+/* .btn2 {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+}
+.btn2:hover,
+.btn2:focus {
+  background-color: black;
+  color: #fff;
+} */
+
+/* .btn-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  vertical-align: middle;
+} */
 .about {
 }
 .about-list {
