@@ -147,6 +147,7 @@ img {
 
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -155,6 +156,7 @@ img {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 .hero-bottom-text {
   color: #9da4bd;
@@ -185,6 +187,8 @@ img {
   vertical-align: middle;
 } */
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-list {
 }
@@ -217,7 +221,8 @@ img {
 
 .prices {
   background-color: grey;
-}
+  padding-top: 120px;
+  padding-bottom: 120px;
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
 }
