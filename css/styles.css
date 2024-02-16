@@ -204,6 +204,17 @@ img {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-title::before {
+  content: "";
+  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/gallery/img-1.jpg);
+  display: block;
 }
 .hero-bottom-text {
   color: #9da4bd;
@@ -255,6 +266,21 @@ img {
     teal 30% 100%
   );
 } */
+
+/* Shadows */
+
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: tomato;
+  margin: 50px auto 0;
+  box-shadow: 10px 10px 0px 0px violet, 30px 30px 0px 0px rgb(70, 200, 131);
+}
+.box:active {
+  box-shadow: unset;
+  transform: translate(30px, 30px);
+}
+
 .btn-icon {
   display: inline-block;
   height: 20px;
@@ -451,16 +477,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  fill: #ffffff;
 }
-.barbers-soc-icon {
+/* .barbers-soc-icon {
   fill: currentColor;
-}
+} */
 
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
   background-color: teal;
-  color: violet;
+  fill: violet;
 }
 
 /* .barbers-soc-link:hover .barbers-soc-icon,
