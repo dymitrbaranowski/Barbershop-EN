@@ -548,6 +548,29 @@ img {
 .barbers-item {
   flex-basis: calc((100% - 60px) / 3);
 }
+
+.barbers-item:hover .barbers-cover-text {
+  transform: translateY(0);
+  transition: transform 300ms linear;
+}
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-cover-text {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rgb(255, 108, 0);
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
 .barbers-item-title {
   color: #303030;
   text-align: center;
@@ -557,7 +580,7 @@ img {
   letter-spacing: 0.02em;
 }
 .barbers-item-text {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
   text-align: center;
   font-size: 14px;
   line-height: 1.36;
@@ -623,4 +646,23 @@ img {
 
 .gallery-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 64, 64, 0.476);
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
