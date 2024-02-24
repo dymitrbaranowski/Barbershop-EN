@@ -50,9 +50,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline-color: red;
+  /* outline-color: red;
   outline-width: 2px;
-  outline-style: groove;
+  outline-style: groove; */
 }
 
 .btn {
@@ -115,7 +115,9 @@ img {
 /* --------Header ---------*/
 
 .header {
-  background-color: grey;
+  position: absolute;
+  width: 100%;
+  /* background-color: grey; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -144,6 +146,7 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  transition: color 300ms linear;
 }
 
 .header-link:is(:hover, :focus) {
@@ -185,8 +188,28 @@ img {
   flex-grow: 1;
   padding: 272px 100px 208px;
 }
-.hero-list {
+
+.hero-soc {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  /* width: 100px; */
+}
+
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 .hero-item {
 }
