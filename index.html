@@ -56,7 +56,9 @@
         <a class="header-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <button class="header-btn btn" data-modal-open type="button">
+          Online-booking
+        </button>
       </div>
     </header>
     <main>
@@ -156,7 +158,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online-booking</button>
+            <button type="button" class="about-btn btn" data-modal-open>
+              Online-booking
+            </button>
           </div>
         </div>
       </section>
@@ -206,7 +210,9 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">Online-booking</button>
+          <button type="button" class="prices-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </section>
       <section class="benefits section">
@@ -493,12 +499,15 @@
         </li>
       </ul>
     </footer>
-    <div class="backdrop">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modale-close" data-modal-close>X</button>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
