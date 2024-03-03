@@ -687,6 +687,7 @@ img {
 .modale-close {
   display: block;
   margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .is-hidden {
@@ -696,4 +697,45 @@ img {
 }
 .no-scroll {
   overflow: hidden;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #ac5858;
+}
+
+.modal-input::placeholder {
+  font-style: 12px;
+  color: teal;
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: hsla(120, 19%, 51%, 0.337);
+}
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: hsla(6, 33%, 59%, 0.337);
+}
+
+.error {
+  display: none;
+  color: red;
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .error {
+  display: block;
 }
