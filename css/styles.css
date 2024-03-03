@@ -707,16 +707,37 @@ img {
   text-align: center;
   margin-bottom: 15px;
 }
+.input-wrap {
+  position: relative;
+}
 
+.modal-field {
+  margin-bottom: 10px;
+}
 .modal-input {
   width: 100%;
   height: 45px;
   border: 1px solid #999999;
   border-radius: 5px;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 30px;
   font-size: 14px;
   color: #ac5858;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: rgba(240, 101, 42, 0.759);
+}
+.modal-input:focus + .modal-input-icon {
+  fill: #ff6c00;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 5px;
+  bottom: 23px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-input::placeholder {
@@ -738,4 +759,20 @@ img {
 
 .modal-input:not(:focus):not(:placeholder-shown):invalid + .error {
   display: block;
+}
+
+.modal-label-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  background-color: transparent;
+  resize: none;
+  padding: 10px;
 }

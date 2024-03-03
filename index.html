@@ -504,22 +504,35 @@
         <button type="button" class="modale-close" data-modal-close>X</button>
         <p class="modal-title">Modal title</p>
         <form class="modal-form">
-          <input
-            type="text"
-            class="modal-input"
-            placeholder="Enter your name*"
-            name="user-name"
-            required
-          />
-
-          <input
-            type="tel"
-            class="modal-input"
-            placeholder="+380 (00) 000-00-00"
-            name="user-phone"
-            required
-            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-          />
+          <label
+            ><span class="modal-label-text">Enter your name*</span>
+            <input
+              type="text"
+              class="modal-input"
+              placeholder="John"
+              name="user-name"
+              required
+            />
+          </label>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label-text"
+              >Enter your phonr*</label
+            >
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                title="+380 (00) 000-00-00"
+                placeholder="+380 (00) 000-00-00"
+                name="user-phone"
+                required
+                id="user-phone"
+              />
+              <svg width="20" height="20" class="modal-input-icon">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </div>
+          </div>
           <p class="error">error</p>
           <input
             type="email"
@@ -527,6 +540,27 @@
             placeholder="Enter your email*"
             name="user-email"
           />
+          <div class="modal-field">
+            <label for="user-comment" class="modal-label-text"
+              >Enter your comment*</label
+            >
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="comment"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <label for="user-city" class="modal-label-text"
+              >Enter your city*</label
+            >
+            <select name="user-city" id="user-cit" class="modal-input">
+              <option value="london">London</option>
+              <option value="paris">Paris</option>
+              <option value="novy-roxdil" selected>Novyi Rozdil</option>
+            </select>
+          </div>
           <button type="submit">Send</button>
         </form>
       </div>
