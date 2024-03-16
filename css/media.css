@@ -1,0 +1,52 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .barbers > .container {
+    width: 480px;
+  }
+
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gallery-top-text {
+    margin-bottom: 44px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .barbers > .container {
+    width: 1200px;
+  }
+
+  .barbers-item {
+    flex-basis: calc((100% - 60px) / 3);
+    /* width: 100%; */
+  }
+
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

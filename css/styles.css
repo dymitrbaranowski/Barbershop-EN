@@ -562,16 +562,18 @@ img {
 
 .barbers-title {
   color: var(--second-btn-color);
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 }
 
 .barbers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .barbers-item {
-  flex-basis: calc((100% - 60px) / 3);
+  /* flex-basis: calc((100% - 60px) / 3); */
+  width: 100%;
 }
 
 .barbers-item:hover .barbers-cover-text {
