@@ -124,6 +124,39 @@
     padding-bottom: 120px;
   }
 
+  .header-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-link {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: color 300ms linear;
+  }
+
+  .header-link:is(:hover, :focus) {
+    color: #ff6c00;
+  }
+
+  .header-tel {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 43px;
+  }
+  .header-btn {
+    display: block;
+    color: var(--main-btn-color);
+  }
+
   .hero-wrap {
     padding-bottom: 210px;
     background-image: linear-gradient(
