@@ -184,3 +184,9 @@
     line-height: 1.18;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header-logo {
+    background-color: #ffffff;
+  }
+}
