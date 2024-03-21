@@ -242,7 +242,12 @@ img {
 }
 
 .mob-soc-item:not(:last-child) {
+  display: flex;
   margin-bottom: 24px;
+}
+
+.mob-soc-item {
+  display: flex;
 }
 .mob-soc-link {
   font-weight: 600;
@@ -260,8 +265,17 @@ img {
   color: #303030;
 }
 
+.mob-soc-list {
+  display: inline-block;
+
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
 .mob-soc-list::before {
   content: "";
+  display: inline-flex;
   width: 60px;
   height: 1px;
   background-color: #303030;
