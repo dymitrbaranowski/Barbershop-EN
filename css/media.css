@@ -2,6 +2,24 @@
   .container {
     width: 448px;
   }
+
+  .modal {
+    max-width: 460px;
+    gap: 0;
+  }
+
+  .mob-soc-list {
+    max-width: 197px;
+  }
+  .mob-soc-link {
+    /* gap: 24px 40px; */
+    margin-left: 40px;
+  }
+
+  .mob-soc-link:nth-child(n + 2) {
+    margin-left: 116px;
+    /* margin-top: 24px; */
+  }
 }
 
 @media screen and (min-width: 768px) {
