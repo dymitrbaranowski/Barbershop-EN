@@ -17,7 +17,7 @@
   }
 
   .mob-soc-link:nth-child(n + 2) {
-    margin-left: 116px;
+    margin-left: 120px;
     /* margin-top: 24px; */
   }
 }
@@ -25,6 +25,10 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+  }
+
+  .menu-open-btn {
+    display: none;
   }
 
   .barbers > .container {
@@ -35,12 +39,47 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  /* Header------------ */
+
+  .header-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-link {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: color 300ms linear;
+  }
+
+  .header-link:is(:hover, :focus) {
+    color: #ff6c00;
+  }
+
+  .header-tel {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 43px;
+  }
+  .header-btn {
+    display: block;
+    color: var(--main-btn-color);
+  }
 
   .bottom-text {
     font-size: 18px;
     line-height: 1.67;
   }
 
+  /*  Hero------------ */
   .hero {
     background-image: unset;
     background-color: unset;
@@ -206,5 +245,11 @@
 @media screen and (max-width: 767px) {
   .header-logo-img {
     fill: #ffffff;
+  }
+
+  .header-list,
+  .header-tel,
+  .header-btn {
+    display: none;
   }
 }

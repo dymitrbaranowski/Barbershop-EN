@@ -162,12 +162,6 @@ img {
   margin-right: auto;
 }
 
-.header-list,
-.header-tel,
-.header-btn {
-  display: none;
-}
-
 .menu-open-btn {
   border: none;
   background-color: transparent;
@@ -267,7 +261,7 @@ img {
   font-size: 18px;
   line-height: calc(25 / 18);
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+
   color: #303030;
 }
 
