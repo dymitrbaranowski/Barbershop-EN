@@ -186,14 +186,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  /* body {
-    background: rgba(25, 28, 38, 0.486);
-  } */
-
-  /* .no-scroll {
-    background: rgba(25, 28, 38, 0.486);
-  } */
-  .header-logo {
-    background-color: #ffffff;
+  .header-logo-img {
+    fill: #ffffff;
   }
 }
