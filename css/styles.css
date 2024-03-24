@@ -528,8 +528,8 @@ img {
 }
 
 .prices-list-wrap {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-bottom: 44px;
 }
 .prices-list {
