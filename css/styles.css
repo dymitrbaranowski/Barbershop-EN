@@ -455,9 +455,13 @@ img {
   vertical-align: middle;
 }
 /* About */
-.about-container {
+
+/* .about-container {
   display: flex;
   gap: 30px;
+} */
+
+.about-container {
 }
 
 .about-wrap {
