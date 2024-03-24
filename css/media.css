@@ -25,6 +25,8 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .menu-open-btn {
@@ -41,9 +43,12 @@
   }
   /* Header------------ */
 
+  .header-nav {
+  }
   .header-list {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    margin-left: 45px;
   }
 
   .header-link {
@@ -59,7 +64,14 @@
     color: #ff6c00;
   }
 
+  .adress-booking {
+    position: relative;
+  }
   .header-tel {
+    position: absolute;
+    top: 71px;
+    right: 18px;
+
     display: block;
     color: #fff;
     font-size: 12px;
@@ -67,7 +79,7 @@
     line-height: 1.33;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-right: 43px;
+    /* margin-right: 43px; */
   }
   .header-btn {
     display: block;
@@ -85,7 +97,7 @@
     background-color: unset;
   }
   .hero-soc {
-    width: 116px;
+    width: 95px;
     display: flex;
     align-items: flex-end;
     padding-left: 27px;
@@ -149,12 +161,34 @@
     max-width: 360px;
   }
 
+  /* Gallery------ */
+
   .gallery-top-text {
     margin-bottom: 44px;
   }
 
   .gallery-item {
     width: calc((100% - 30px) / 2);
+  }
+
+  /* About--------- */
+
+  .about-container {
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-wrap {
+    max-width: 330px;
+    /* padding-right: 100px; */
   }
 }
 
@@ -182,8 +216,8 @@
   }
 
   .header-list {
-    display: flex;
     gap: 30px;
+    margin-left: 123px;
   }
 
   .header-link {
@@ -199,16 +233,17 @@
     color: #ff6c00;
   }
 
+  .adress-booking {
+    display: flex;
+    align-items: center;
+  }
   .header-tel {
+    position: static;
     display: block;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+
     margin-right: 43px;
   }
+
   .header-btn {
     display: block;
     color: var(--main-btn-color);
@@ -245,11 +280,5 @@
 @media screen and (max-width: 767px) {
   .header-logo-img {
     fill: #ffffff;
-  }
-
-  .header-list,
-  .header-tel,
-  .header-btn {
-    display: none;
   }
 }

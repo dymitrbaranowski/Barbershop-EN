@@ -75,9 +75,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline-color: red;
+  outline-color: red;
   outline-width: 2px;
-  outline-style: groove; */
+  outline-style: groove;
 }
 
 .btn {
@@ -150,6 +150,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -159,7 +160,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 .menu-open-btn {
@@ -225,7 +226,7 @@ img {
   color: #303030;
 }
 
-.current-link {
+.current-link.link {
   color: rgba(255, 108, 0, 1);
 }
 
@@ -462,15 +463,14 @@ img {
 } */
 
 .about-container {
+  /* padding-left: 30px;
+  padding-right: 30px; */
 }
 
-.about-wrap {
-  padding-right: 100px;
-}
 .about-list {
-  display: flex;
-  gap: 30px;
+  display: none;
 }
+
 .list {
 }
 .about-item {
@@ -482,6 +482,11 @@ img {
 
 .about-title {
   color: var(--second-title-color);
+  max-width: 306px;
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: normal;
+  letter-spacing: 1.4px;
   margin-bottom: 20px;
 }
 .about-bottom-text {
