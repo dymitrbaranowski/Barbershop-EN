@@ -612,19 +612,21 @@ img {
 
 .benefits-container {
   display: flex;
-  padding-left: 85px;
-  gap: 130px;
-  padding-right: 115px;
+  flex-direction: column-reverse;
+
+  gap: 44px;
 }
 
 .benefits-wrap {
+  display: flex;
+  flex-direction: column;
   padding-top: 9px;
 }
 .benefits-list {
-  width: 370px;
+  max-width: 370px;
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 .benefits-item {
@@ -676,8 +678,12 @@ img {
 
 .benefits-title {
   color: var(--second-title-color);
+  padding-bottom: 20px;
+  width: 100%;
+  letter-spacing: normal;
 }
 .benefits-bottom-text {
+  max-width: 379px;
   color: #555;
 }
 
