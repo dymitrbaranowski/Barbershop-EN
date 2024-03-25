@@ -629,6 +629,12 @@ img {
   /* flex-shrink: 0; */
 }
 
+/* .benefits-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  padding: 20px 24px;
+} */
 .benefits-item {
   width: 170px;
   height: 133px;
