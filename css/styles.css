@@ -613,7 +613,8 @@ img {
 .benefits-container {
   display: flex;
   flex-direction: column-reverse;
-
+  justify-content: center;
+  align-items: center;
   gap: 44px;
 }
 
@@ -623,7 +624,7 @@ img {
   padding-top: 9px;
 }
 .benefits-list {
-  max-width: 370px;
+  /* max-width: 370px; */
   display: flex;
   flex-wrap: wrap;
   /* flex-shrink: 0; */
@@ -636,7 +637,7 @@ img {
   padding: 20px 24px;
 } */
 .benefits-item {
-  width: 170px;
+  width: 193px;
   height: 133px;
   background-color: #f7f7f7;
   padding: 20px 24px;
