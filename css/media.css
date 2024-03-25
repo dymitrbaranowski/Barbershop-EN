@@ -190,6 +190,29 @@
     max-width: 330px;
     /* padding-right: 100px; */
   }
+
+  /* Prices------ */
+
+  .prices {
+    background-image: url(../images/prices/prices-bg-tab.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      background-image: url(../images/prices/prices-bg-tab-2x.png);
+    }
+  }
+
+  .prices-title {
+    font-size: 42px;
+  }
+
+  .prices-item-text {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -290,6 +313,54 @@
   .about-wrap {
     max-width: 470px;
     /* padding-right: 100px; */
+  }
+
+  /* Prices ------ */
+
+  .prices {
+    background-color: #111319;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url(../images/prices/prices-bg-desc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      background-image: url(../images/prices/prices-bg-desc-2x.png);
+    }
+  }
+
+  .prices-list-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  .prices-list:first-child {
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+
+  .prices-list:last-child {
+    background-image: linear-gradient(
+      180deg,
+      #090b13 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
+
+  .prices-list {
+    flex-basis: calc((100% - 30px) / 2);
+    padding: 30px 20px;
   }
 }
 
