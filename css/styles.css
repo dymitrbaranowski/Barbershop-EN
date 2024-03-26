@@ -957,13 +957,13 @@ img {
 /* Contacts------- */
 .contact-wrap {
   background-color: #191c26;
-  /* background-image: url(../images/contacts/contacts-bg-mob.png); */
+  background-image: url(../images/contacts/contacts-bg-mob.png);
   background-repeat: no-repeat;
   /* background-position: center; */
   /* background-size: cover; */
   background-position: center 500px;
   /* background-position: center bottom calc(50% - 392px); */
-  background-size: 100vw 100vw;
+  background-size: 100vw 50vh;
 }
 
 .contact-wrap > .container {
@@ -990,10 +990,19 @@ img {
   padding-bottom: 20px;
 }
 .contacts-link {
+  display: flex;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.36px;
+}
+
+.contacts-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  margin-top: 5px;
 }
 
 .contacts-link .underline {
@@ -1018,7 +1027,7 @@ img {
   content: "";
   width: 60px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: var(--third-title-color);
 }
 .contacts-text {
   font-size: 18px;
