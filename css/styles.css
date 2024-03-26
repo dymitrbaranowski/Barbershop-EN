@@ -4,6 +4,7 @@
   --main-btn-color: #ffffff;
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
+  --third-title-color: #9da4bd;
 }
 
 p,
@@ -622,12 +623,22 @@ img {
   display: flex;
   flex-direction: column;
   padding-top: 9px;
+  margin-right: auto;
 }
 .benefits-list {
-  /* max-width: 370px; */
+  max-width: 450px;
   display: flex;
   flex-wrap: wrap;
   /* flex-shrink: 0; */
+
+  margin-left: auto;
+
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 /* .benefits-item {
@@ -640,15 +651,26 @@ img {
   width: 193px;
   height: 133px;
   background-color: #f7f7f7;
-  padding: 20px 24px;
+  padding: 20px 36px;
+
+  @media screen and (min-width: 768px) {
+    width: 210px;
+  }
 }
 
 .benefits-item:nth-child(odd) {
   margin-right: 30px;
+  @media screen and (max-width: 450px) {
+    margin-right: 0;
+  }
 }
 
 .benefits-item:nth-child(even) {
   margin-top: 30px;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 0;
+  }
 }
 .benefits-item .count {
   color: #303030;
@@ -819,37 +841,40 @@ img {
   width: 100%;
 }
 
-.contact-wrap {
-  background-color: #191c26;
-}
+/* ------Contact- Wrap -------- */
 
-.contact-wrap > .container {
-  display: flex;
-}
+/*------------ Online---------- */
+
 /**------------- ONLINE ---------------*/
 
 .online {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: calc((100% / 2) + 15px);
-  padding-right: 30px;
+  /* padding-top: 130px;
+  padding-bottom: 130px; */
+  padding-top: 84px;
+  padding-bottom: 84px;
+  width: 100%;
+  /* width: calc((100% / 2) + 15px); */
+  /* padding-right: 30px; */
 }
 
 .online-title {
+  display: flex;
+  justify-content: center;
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
 
 .online-form {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .online-field {
   position: relative;
 }
 
 .online-item {
+  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -869,8 +894,8 @@ img {
   transform: translateY(-100%);
 }
 .online-input {
-  width: 270px;
-  height: 24px;
+  /* width: 270px;
+  height: 24px; */
   margin-bottom: 44px;
   background-color: transparent;
 }
@@ -899,15 +924,81 @@ img {
 }
 
 .online-btn {
+  display: block;
   color: var(--main-btn-color);
+  margin: 0 auto;
 }
-/**------------- CONTACTS ---------------*/
+.online {
+}
+.online-title {
+}
+.title {
+}
+.online-form {
+}
+.online-field {
+}
+.online-input {
+}
+.online-item {
+}
+.online-label {
+}
+.online-field-text {
+}
+.online-textarea {
+}
+.btn {
+}
+.online-btn {
+}
+
+/* Contacts------- */
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url(../images/contacts/contacts-bg-mob.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  background-position: 0px 500px;
+}
+
+.contact-wrap > .container {
+  /* display: flex; */
+}
+
+.contacts-title {
+  color: #ffffff;
+}
+.title {
+}
+.contacts-address {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+}
+
+.contacts-subtitle {
+}
+.contacts-text {
+}
 
 .contacts {
   padding-top: 130px;
   padding-bottom: 120px;
-  width: calc((100% / 2) - 15px);
+  width: 100%;
+  /* width: calc((100% / 2) - 15px); */
+  color: var(--third-title-color);
+
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
+
+/* ---Backdrop --------- */
 
 .backdrop {
   position: fixed;
