@@ -996,7 +996,7 @@ img {
   @media screen and (min-width: 1200px) {
     display: flex;
     background-image: url(../images/contacts/contacts-bg-desc.png);
-    background-position: 620px 5px;
+    background-position: rigth;
     background-size: 785px 625px;
   }
 }
