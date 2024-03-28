@@ -506,7 +506,13 @@
                     </a>
                   </li>
                   <li class="barbers-soc-item">
-                    <a href="" class="barbers-soc-link"> </a>
+                    <a href="" class="barbers-soc-link">
+                      <svg width="20" height="20" class="barbers-soc-icon">
+                        <use
+                          href="./images/icons/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="barbers-soc-item">
                     <a href="" class="barbers-soc-link">
@@ -757,33 +763,62 @@
         </div>
       </div>
     </main>
-    <footer>
-      <p>&copy;Copyright 2020</p>
-      <ul>
-        <li>
-          <a href target="_blank" rel="noopener noreferrer nofollow"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
-        </li>
-      </ul>
+    <footer class="footer-wrap container">
+      <p class="footer-copyrigth">&copy;Copyright 2020</p>
+      <div class="footer-soc">
+        <ul class="footer-list list">
+          <li class="footer-item">
+            <a
+              class="footer-link link"
+              href
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer-item">
+            <a
+              class="footer-link link"
+              href
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modale-close" data-modal-close>X</button>
+        <button
+          type="button"
+          class="modale-close"
+          data-menu-close
+          data-modal-close
+        >
+          <svg width="24" height="20">
+            <use
+              class="modal-close-icon"
+              href="./images/icons/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
         <p class="modal-title">Modal title</p>
         <form class="modal-form">
           <label
             ><span class="modal-label-text">Enter your name*</span>
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="John"
-              name="user-name"
-              required
-            />
+            <div class="name-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                placeholder="John"
+                name="user-name"
+                required
+              />
+              <svg width="20" height="20" class="modal-user-icon">
+                <use href="./images/icons/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
           </label>
           <div class="modal-field">
             <label for="user-phone" class="modal-label-text"
@@ -800,17 +835,22 @@
                 id="user-phone"
               />
               <svg width="20" height="20" class="modal-input-icon">
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <p class="error">error</p>
-          <input
-            type="email"
-            class="modal-input"
-            placeholder="Enter your email*"
-            name="user-email"
-          />
+          <div class="email-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              placeholder="Enter your email*"
+              name="user-email"
+            />
+            <svg width="20" height="20" class="modal-email-icon">
+              <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </div>
           <div class="modal-field">
             <label for="user-comment" class="modal-label-text"
               >Enter your comment*</label
